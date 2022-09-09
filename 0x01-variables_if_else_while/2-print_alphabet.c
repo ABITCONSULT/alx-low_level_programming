@@ -10,7 +10,7 @@ main()
 
 	while (alph < 'z')
 	{
-		putchar("%c", alph);
+		putchar("%d", alph);
 		alph++
 	}
 		putchar("\n");
