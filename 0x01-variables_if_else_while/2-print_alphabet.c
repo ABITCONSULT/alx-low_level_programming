@@ -6,12 +6,13 @@
 */
 int main()
 {
-	int alph;
-	
+	void pr_int(int alph)
+
 	alph = 'a';
 	while (alph <= 'z')
 	{
-		putchar("%d", alph);
+		putchar('-');
+		pr_uint(alph);
 		alph++
 	}
 		putchar("\n");
