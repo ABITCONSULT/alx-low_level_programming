@@ -13,10 +13,12 @@ int main(void)
 	{
 		putchar(num);
 		if (num <= '8')
+		{
 			putchar(',');
 			putchar(' ');
-		num++;
 		}
+		num++;
+	}
 	putchar('\n');
 	return (0);
 }
