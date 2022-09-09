@@ -2,7 +2,7 @@
 /**
  * main - This is the entry point of the printing quote
  *
- * Return- returns one if no error and any number if error
+ * Return:returns one if no error and any number if error
 */
 int main(void)
 {
