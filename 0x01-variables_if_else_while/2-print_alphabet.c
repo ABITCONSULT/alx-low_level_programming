@@ -6,9 +6,9 @@
 */
 main()
 {
-	char alph = a;
+	char alph = 'a';
 
-	while (a < z)
+	while (alph < 'z')
 	{
 		putchar("%c", alph);
 		alph++
