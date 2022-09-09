@@ -12,10 +12,12 @@ int main(void)
 	while (alph <= 'z')
 	{
 		if (alph == 'e')
-			return;	
+		{
+		}	
 		else
 			if (alph == 'q')
-				return;
+			{
+			}
 			else
 				putchar(alph);
 		alph++;
