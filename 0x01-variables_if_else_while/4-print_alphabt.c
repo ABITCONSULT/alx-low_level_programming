@@ -12,10 +12,10 @@ int main(void)
 	while (alph <= 'z')
 	{
 		if (alph == 'e')
-			alph++;
+			return;	
 		else
 			if (alph == 'q')
-				alph++;
+				return;
 			else
 				putchar(alph);
 		alph++;
