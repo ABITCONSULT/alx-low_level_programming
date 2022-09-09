@@ -4,9 +4,9 @@
  *
  * Return:return zero if no erro and non zero if error
 */
-main()
+int main()
 {
-	char alph;
+	int alph;
 	
 	alph = 'a';
 	while (alph <= 'z')
@@ -15,5 +15,5 @@ main()
 		alph++
 	}
 		putchar("\n");
-	return ();
+	return (0);
 }
