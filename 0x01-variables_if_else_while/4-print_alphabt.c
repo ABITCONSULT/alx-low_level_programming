@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (alph == 'e')
 		{
-		}	
+		}
 		else
 			if (alph == 'q')
 			{
