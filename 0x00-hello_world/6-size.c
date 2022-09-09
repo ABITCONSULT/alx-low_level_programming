@@ -1,4 +1,4 @@
-#include <stdio>
+#include <stdio.h>
 /**
  *main - main is the entry point of this program size
  *
