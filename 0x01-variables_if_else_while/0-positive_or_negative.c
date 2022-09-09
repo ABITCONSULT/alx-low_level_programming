@@ -1,16 +1,15 @@
-
-
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - this is where the program starts
+ *
+ * Return:returns zero if no error and none zero if error
+ */
 int main(void)
 {
 		int n;
 			srand(time(0));
-				n = rand() - RAND_MAX / 2;
-					/* your code goes there */                                               
+				n = rand() - RAND_MAX / 2;                                              
 		                                if (n > 0)                                                                   
 		                                        printf("%d\n is positive", n);                                                      
 		                                else                                                                                       
