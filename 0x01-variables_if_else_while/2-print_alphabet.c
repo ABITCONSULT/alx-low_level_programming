@@ -12,7 +12,7 @@ int main()
 	while (alph <= 'z')
 	{
 		putchar(alph);
-		alph++
+		alph++;
 	}
 		putchar("\n");
 	return (0);
