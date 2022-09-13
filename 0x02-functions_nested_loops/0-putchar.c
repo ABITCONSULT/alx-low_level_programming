@@ -1,4 +1,4 @@
-#include <stdio.h> 
+#include "main.h" 
 /**
  * main - the main programs to print putch
  *
@@ -6,6 +6,6 @@
 */
 main()
 {
-	printf("_putchar\n");
+	_putchar("_putchar\n");
 	return (0);
 }
