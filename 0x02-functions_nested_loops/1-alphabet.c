@@ -1,12 +1,11 @@
-#include <stdio.h>
-int print_alphabet(int alph)
+#include "main.h"
+void print_alphabet(void)
 {
 	alph = 'a';
 	while (alph <= 'z')
 	{
-		putchar(alph);
+		_putchar(alph);
 		alph++;
 	}
 	putchar('\n');
-	return print_alphabet;
 }
