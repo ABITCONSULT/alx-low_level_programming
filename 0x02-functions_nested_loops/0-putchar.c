@@ -8,6 +8,6 @@ int main(void)
 {
 	int _putchar;
 
-	_putchar(_putchar);
+	_putcha(_putchar);
 	return (0);
 }

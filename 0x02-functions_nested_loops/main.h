@@ -2,6 +2,6 @@
 
 char _putchar(char print)
 {
-	putchar(print);
+	putcha(print);
 	return (0);
 }
