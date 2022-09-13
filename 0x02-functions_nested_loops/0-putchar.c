@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	long int out = '_putchar';
+	int out = "_putchar";
 
 	_putcha(out);
 	return (0);
