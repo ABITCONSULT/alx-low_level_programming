@@ -1,11 +1,10 @@
-#include "main.h" 
+#include "main.h"
 /**
- * main - the main programs to print putch
+ * main - the main programs to print putchar
  *
- * Return:returns 0
+ * Return:returns 0
 */
 main()
 {
-	_putchar("_putchar\n");
-	return (0);
+	_putchar(_putchar);
 }
