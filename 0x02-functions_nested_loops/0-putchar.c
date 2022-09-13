@@ -10,7 +10,7 @@ int main(void)
 	char out[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
 	while (i < 8) {
-		_putchar(out[i]);
+		putchar(out[i]);
 		i++;
 			    }
 	return (0);
