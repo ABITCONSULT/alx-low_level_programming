@@ -6,10 +6,12 @@
 */
 int main(void)
 {
+	int i = 0;
 	char out[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
 
-	for (int i = 0; i < 8; ++i) {
+	while (i < 8) {
 		_putchar("%c", out[i]);
+		i++;
 			    }
 	return (0);
 }
