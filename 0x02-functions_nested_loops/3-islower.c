@@ -3,7 +3,7 @@
  * _islower - to check the case of alph
  *
 */
-int _islower(int c);
+int _islower(int c)
 {
 	int alph = 'a';
 	while (alph <= 'z')
