@@ -12,7 +12,7 @@ int _islower(int c)
 		{
 			return (1);
 		}
-	alph++
+	alph++;
 	}
 	return (0);
 }
