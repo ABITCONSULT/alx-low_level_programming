@@ -1,5 +1,7 @@
+#include <stdio.h>
+
 int _putchar(int print)
 {
-	printf(print)
-	return(void)
+	putchar(print);
+	return (void);
 }
