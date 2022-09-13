@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int _putcha(int print)
+char _putcha(char print)
 {
 	putchar(print);
 	return (0);

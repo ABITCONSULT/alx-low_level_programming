@@ -4,9 +4,9 @@
  *
  * Return:returns 0
 */
-int main(void)
+char main(void)
 {
-	long long int out = '_putchar';
+	char out[] = "_putchar";
 
 	_putcha(out);
 	return (0);
