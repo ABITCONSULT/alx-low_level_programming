@@ -1,4 +1,5 @@
-int _putchar(int c)
+int _putchar(int print)
 {
-	return(c);
+	printf(print)
+	return(void)
 }
