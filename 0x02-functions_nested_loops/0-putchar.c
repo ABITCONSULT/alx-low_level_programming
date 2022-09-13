@@ -1,4 +1,4 @@
-nclude <stdio.h>                                                                                                         
+#include <stdio.h> 
 /**
  * main - the main programs to print putch
  *
@@ -7,5 +7,5 @@ nclude <stdio.h>                               �
 main()
 {
 	printf("_putchar\n");
-	return(0)
+	return (0);
 }
