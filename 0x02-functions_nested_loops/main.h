@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int _putchar(int print)
+char _putchar(char print)
 {
 	putchar(print);
-	return (void);
+	return (0);
 }
