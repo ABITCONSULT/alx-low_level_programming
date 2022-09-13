@@ -9,7 +9,10 @@ int _islower(int c)
 	while (alph <= 'z')
 	{
 		if (c == alph)
+		{
 			return (1);
+		}
+	alph++
 	}
 	return (0);
 }
