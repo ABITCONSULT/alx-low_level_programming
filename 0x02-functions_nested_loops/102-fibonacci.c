@@ -7,16 +7,17 @@
 int main(void)
 {
 	long int count, num1, num2, newnum;
+
 	num1 = 1;
 	num2 = 2;
-	printf("%d, %d, ", num1, num2);
+	printf("%ld, %ld, ", num1, num2);
 	for (count = 3; count <= 50; count++)
 	{
 	newnum = num1 + num2;
 	if (count < 50)
-		printf("%d, ", newnum);
+		printf("%ld, ", newnum);
 	else
-		printf("%d\n", newnum);
+		printf("%ld\n", newnum);
 	num1 = num2;
 	num2 = newnum;
 	}
