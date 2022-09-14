@@ -19,8 +19,8 @@ void times_table(void)
 
 		if (mult <= 9)
 		{
+			_putchar(' ')
 			_putchar((mult % 10) + 48);
-			_putchar(' ');
 		}
 		else
 		{
