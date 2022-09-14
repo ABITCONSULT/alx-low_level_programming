@@ -13,7 +13,7 @@ void times_table(void)
 		for (j = 0; j <= 9; j++)
 		{
 			mult = i * j;
-		if (((mult / 10) > 0) && ((mult % 10) > 0))
+		if (mult >= 10)
 		{
 			if (j == 9)
 			{
