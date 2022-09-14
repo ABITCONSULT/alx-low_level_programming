@@ -28,8 +28,11 @@ void jack_bauer(void)
 		_putchar(M);
 		_putchar(m);
 		_putchar('\n');
+		m++;
 		}
+		M++;
 		}
+		h++;
 		}
 	}
 	else
@@ -50,9 +53,13 @@ void jack_bauer(void)
 		_putchar(M);
 		_putchar(m);
 		_putchar('\n');
+		m++;
+		}
+		M++;
+		}
+		h++;
 		}
 		}
-		}
-		}
+	H++;
 	}
 }
