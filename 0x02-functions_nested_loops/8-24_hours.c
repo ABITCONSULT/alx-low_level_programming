@@ -31,8 +31,6 @@ void jack_bauer(void)
 		}
 		}
 		}
-	}
-	}
 	else
 	{
 		h = 0;
@@ -45,7 +43,7 @@ void jack_bauer(void)
 		while (m <= 9)
 		{
 		_putchar(H);
-		_puthar(h);
+		_putchar(h);
 		_putchar(':');
 		_putchar(M);
 		_putchar(m);
@@ -54,5 +52,7 @@ void jack_bauer(void)
 		}
 		}
 	}
-	return jack_bauer;
+	}
+	}
+	return;
 }
