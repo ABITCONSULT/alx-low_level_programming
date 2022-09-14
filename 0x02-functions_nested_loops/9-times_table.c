@@ -7,15 +7,33 @@
 void times_table(void)
 {
 	int i, j, mult;
-	for(i = 1; i <= 9; i++)
+	for(i = 0; i <= 9; i++)
 	{
-		for(j = 1; j <= 9; j++)
+		for(j = 0; j <= 9; j++)
 		{
 			mult = i*j;
-			_putchar(mult / 10 + 48);
-			_putchar(mult % 10 + 48);
+		if ((mult / 10) > 0)
+		{
+			if (j == 9)
+			{	
+				_putchar((mult / 10) + 48);
+				_putchar((mult % 10) + 48);
+			}
+			else
+			{
+				_putchar((mult / 10) + 48);
+				_putchar((mult % 10) + 48);
+				_putchar(',');
+				_putchar(' ');
+			}
+		}
+		else
+		{
+			_putchar((mult % 10) + 48);
 			_putchar(',');
 			_putchar(' ');
+			_putchar(' ');
+		}
 		}
 	_putchar('\n');
 	}
