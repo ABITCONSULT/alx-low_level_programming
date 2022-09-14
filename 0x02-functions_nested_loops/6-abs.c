@@ -11,13 +11,13 @@ int _abs(int n)
 
 	if (n >= 0)
 	{
-		abs = n
-		_putchar(abs)
+		abs = n;
+		_putchar(abs);
 	}
 	else
 	{
-			abs = (-1 * n)
-			_putchar(abs)
+			abs = (-1 * n);
+			_putchar(abs);
 	}
 	return abs;
 }
