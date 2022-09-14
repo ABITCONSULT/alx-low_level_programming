@@ -1,7 +1,6 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * main - Program that sums multiple of 3 an 5 to 1024
+ * main-Program that sums multiple of 3 an 5 to 1024
  *
  * Retun:returns the value of sum
 */
