@@ -1,4 +1,5 @@
 #include "main.h"
+#include <math.h>
 /**
  * _abs - computes absolute value of an int
  * @n:the number to get its abs value
@@ -8,5 +9,6 @@ int _abs(int n)
 {
 	int abs;
 
-	abs = ((n*n)**0.5);
+	abs = (sqrt(n*n));
 	return abs;
+}
