@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main-Program that sums multiple of 3 an 5 to 1024
- *
+ * Description: computes mult 3 and 5
  * Retun:returns the value of sum
 */
 int main(void)
