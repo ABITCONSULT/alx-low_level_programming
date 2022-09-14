@@ -16,7 +16,7 @@ int _abs(int n)
 	}
 	else
 	{
-			abs = (-1 * n);
+			abs = (n + (-2*n));
 			_putchar(abs);
 	}
 	return abs;
