@@ -30,7 +30,7 @@ void times_table(void)
 			}
 		}
 		else
-			if ((mult / 10) = 0)
+			if ((mult / 10) == 0)
 			{
 			if (j < 9)
 			{
