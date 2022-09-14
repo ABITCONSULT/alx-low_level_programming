@@ -14,20 +14,12 @@ void jack_bauer(void)
 	if (H <= '1')
 	{
 		h = '0';
-		while (h <= '9')
-		{
+		while (h <= '9') {
 		M = '0';
-		while (M <= '5')
-		{
+		while (M <= '5') {	
 		m = '0';
-		while (m <= '9')
-		{
-		_putchar(H);
-		_putchar(h);
-		_putchar(':');
-		_putchar(M);
-		_putchar(m);
-		_putchar('\n');
+		while (m <= '9') {
+		_putchar(H); _putchar(h); _putchar(':'); _putchar(M); _putchar(m); _putchar('\n');
 		m++;
 		}
 		M++;
