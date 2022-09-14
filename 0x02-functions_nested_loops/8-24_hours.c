@@ -18,7 +18,6 @@ void jack_bauer(void)
 		{
 		}
 		else
-			if
 			{
 			M = '0';
 			while (M <= '5')
