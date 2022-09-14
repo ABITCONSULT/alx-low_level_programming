@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- *  * main - program 50 fibonacci starts here
- *   *
- *    * Return: returns 0 (success)
- *    */
+ * main - program 50 fibonacci starts here
+ *
+ * Return: returns 0 (success)
+*/
 int main(void)
 {
-		long int num1, num2, newnum;
-
+		long int num1, num2, newnum, sumf;
+		sumf = 0;
 		num1 = 1;
 		num2 = 2;
 		while (num2 <= 4000000)
@@ -15,13 +15,11 @@ int main(void)
 			newnum = num1 + num2;
 			if ((num2 % 2) == 0)
 			{
-				if (num2 == 4000000)
-					printf("%ld\n", num2);
-				else
-					printf("%ld, ", num2);
+			sumf = sumf + num2;
 			}
 			num1 = num2;
 			num2 = newnum;
 		}
+		printf("%ld\n", sumf)
 		return (0);
 }
