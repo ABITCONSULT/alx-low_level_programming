@@ -19,6 +19,7 @@ void times_table(void)
 			{
 				_putchar((mult / 10) + 48);
 				_putchar((mult % 10) + 48);
+				_putchar('\n');
 			}
 			else
 			{
@@ -29,18 +30,19 @@ void times_table(void)
 			}
 		}
 		else
-		{
-		if (j < 9)
-		{
+			if ((mult / 10) = 0)
+			{
+			if (j < 9)
+			{
 			_putchar((mult % 10) + 48);
 			_putchar(',');
 			_putchar(' ');
 			_putchar(' ');
-		}
-		else
+			}
+			else
 			_putchar((mult % 10) + 48);
+			_putchar('\n');
+			}
 		}
-		}
-	_putchar('\n');
 	}
 }
