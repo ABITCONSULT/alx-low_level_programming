@@ -31,8 +31,10 @@ void jack_bauer(void)
 		}
 		}
 		}
+	}
 	else
-	{
+		if
+		{
 		h = 0;
 		while (h <= 3)
 		{
@@ -51,8 +53,7 @@ void jack_bauer(void)
 		}
 		}
 		}
+		}
 	}
-	}
-	}
-	return;
+	return ();
 }
