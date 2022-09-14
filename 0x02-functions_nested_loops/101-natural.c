@@ -21,6 +21,10 @@ int main(void)
 		if ((i % 5) == 0)
 		{
 			m5 = i;
+			if (m3 == m5)
+			{
+			}
+			else
 			msum = msum + m5;
 		}
 	}
