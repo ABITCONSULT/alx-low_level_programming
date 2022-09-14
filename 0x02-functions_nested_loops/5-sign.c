@@ -2,7 +2,7 @@
 /**
  * print_sign - print the sign of an integer
  * @n:the integer to check
- * Return 1 if positive, 0 if zero, -1 if negative
+ * Return:returns 1 if positive, 0 if zero, -1 if negative
 */
 int print_sign(int n)
 {
@@ -14,7 +14,7 @@ int print_sign(int n)
 	else
 		if (n == 0)
 		{
-			_putchar (0);
+			_putchar (48);
 			return (0);
 		}
 		else
