@@ -9,6 +9,15 @@ int _abs(int n)
 {
 	int abs;
 
-	abs = (sqrt(n*n));
+	if (n >= 0)
+	{
+		abs = n
+		_putchar(abs)
+	}
+	else
+	{
+			abs = (-1 * n)
+			_putchar(abs)
+	}
 	return abs;
 }
