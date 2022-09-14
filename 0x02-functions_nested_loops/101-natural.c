@@ -7,18 +7,23 @@
  * */ 
 int main(void) 
 {
-	int m3, m5, msum, msum1; 
+	int m3, m5, i, msum; 
 	m3 = 3; 
 	m5 = 5; 
-	msum1 = 0;
-	while (m3 < 1024)
+	msum = 0;
+	for (i = 0; i < 1024; i++)
 	{
-		while (m5 < 1024)
-			msum = m3 + m5;
-	m3 = m3 + 3;
-	m5 = m5 + 5;
-	msum1 = msum1 + msum;
-	printf("%d\n", msum1);
+		if ((i % 3) == 0)
+		{
+			m3 = i;
+			msum = msum + m3;
+		}
+		if ((i % 5) == 0)
+		{
+			m5 = i;
+			msum = msum + m5;
+		}
 	}
+	printf("%d\n", msum);
 	return (0);
 }
