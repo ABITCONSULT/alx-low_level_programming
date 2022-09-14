@@ -7,6 +7,7 @@
 int main(void)
 {
 		long int num1, num2, newnum, sumf;
+
 		sumf = 0;
 		num1 = 1;
 		num2 = 2;
