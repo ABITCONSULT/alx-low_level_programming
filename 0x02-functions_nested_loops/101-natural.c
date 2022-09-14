@@ -18,7 +18,7 @@ int main(void)
 	m3 = m3 + 3;
 	m5 = m5 + 5;
 	msum1 = msum1 + msum;
-	}
 	printf("%d\n", msum1);
+	}
 	return (0);
 }
