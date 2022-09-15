@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - program 50 fibonacci starts here
- *
+ * @n
  * Return: returns 0 (success)
 */
 int main(void)
