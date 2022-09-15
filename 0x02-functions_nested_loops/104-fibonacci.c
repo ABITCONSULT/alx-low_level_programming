@@ -6,19 +6,19 @@
 */
 int main(void)
 {
-		double num1, num2, newnum;
+		unsigned long num1, num2, newnum;
 		int count;
 
 		num1 = 1;
 		num2 = 2;
-		printf("%.0f, %.0f, ", num1, num2);
+		printf("%lu, %lu, ", num1, num2);
 		for (count = 1; count <= 96; count++)
 		{
 		newnum = num1 + num2;
 		if (count < 96)
-		printf("%.0f, ", newnum);
+		printf("%lu, ", newnum);
 		else
-		printf("%.0f\n", newnum);
+		printf("%lu\n", newnum);
 		num1 = num2;
 		num2 = newnum;
 															}
