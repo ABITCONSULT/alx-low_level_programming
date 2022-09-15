@@ -11,10 +11,10 @@ int main(void)
 		num1 = 1;
 		num2 = 2;
 		printf("%ld, %ld, ", num1, num2);
-		for (count = 1; count <= 96; count++)
+		for (count = 1; count <= 97; count++)
 		{
 		newnum = num1 + num2;
-		if (count < 96)
+		if (count < 97)
 		printf("%ld, ", newnum);
 		else
 		printf("%ld\n", newnum);
