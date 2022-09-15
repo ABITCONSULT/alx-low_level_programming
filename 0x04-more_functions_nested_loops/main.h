@@ -1,6 +1,13 @@
 #ifndef HEADER_FILE
 #define HEADER_FILE
 
+
+/**
+ * main - header for prototypes here
+ * void prtotypes (void)
+ * int prototypes (int)
+*/
+
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
