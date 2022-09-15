@@ -8,9 +8,9 @@ int _isupper(int c)
 {
 	int value;
 
-	if (c >= 65 && c <= 90)
-		value = '1';
+	if (c >= 'A' && c <= 'Z')
+		value = 1;
 	else 
-		value = '0';
+		value = 0;
 	return (value);
 }
