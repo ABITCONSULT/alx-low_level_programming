@@ -6,21 +6,21 @@
 */
 int main(void)
 {
-		unsigned long num1, num2, newnum;
+		long long num1, num2, newnum;
 		int count;
 
 		num1 = 1;
 		num2 = 2;
-		printf("%lu, %lu, ", num1, num2);
+		printf("%lld, %lld, ", num1, num2);
 		for (count = 1; count <= 96; count++)
 		{
 		newnum = num1 + num2;
 		if (count < 96)
-		printf("%lu, ", newnum);
+		printf("%lld, ", newnum);
 		else
-		printf("%lu\n", newnum);
+		printf("%lld\n", newnum);
 		num1 = num2;
 		num2 = newnum;
-															}
-							return (0);
+		}
+		return (0);
 }
