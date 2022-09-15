@@ -11,14 +11,14 @@ int main(void)
 
 		num1 = 1;
 		num2 = 2;
-		printf("%f, %f, ", num1, num2);
+		printf("%.0f, %.0f, ", num1, num2);
 		for (count = 1; count <= 96; count++)
 		{
 		newnum = num1 + num2;
 		if (count < 96)
-		printf("%f, ", newnum);
+		printf("%.0f, ", newnum);
 		else
-		printf("%f\n", newnum);
+		printf("%.0f\n", newnum);
 		num1 = num2;
 		num2 = newnum;
 															}
