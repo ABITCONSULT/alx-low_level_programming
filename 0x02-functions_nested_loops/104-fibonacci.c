@@ -6,15 +6,15 @@
 */
 int main(void)
 {
-		long int count, num1, num2, newnum;
+		unsigned long int count, num1, num2, newnum;
 
 		num1 = 1;
 		num2 = 2;
 		printf("%ld, %ld, ", num1, num2);
-		for (count = 1; count <= 97; count++)
+		for (count = 1; count <= 96; count++)
 		{
 		newnum = num1 + num2;
-		if (count < 97)
+		if (count < 96)
 		printf("%ld, ", newnum);
 		else
 		printf("%ld\n", newnum);
