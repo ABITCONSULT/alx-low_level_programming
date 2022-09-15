@@ -6,7 +6,8 @@
 */
 int main(void)
 {
-		unsigned long int count, num1, num2, newnum;
+		unsigned long num1, num2, newnum;
+		int count;
 
 		num1 = 1;
 		num2 = 2;
