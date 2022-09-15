@@ -1,7 +1,8 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
  * _isupper - checks for uppercase in a word
- * @c: the character to check for.
+ * @c: the character to check for
  * Return:returns 1 if uppercase
 */
 int _isupper(int c)
