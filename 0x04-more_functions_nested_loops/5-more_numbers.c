@@ -18,6 +18,6 @@ void more_numbers(void)
 			putchar((n / 10) + 48);
 	putchar((n % 10) + 48);
 	}
-	}
 	putchar('\n');
+	}
 }
