@@ -3,7 +3,7 @@
 
 /**
  * main - main program to print fizzbuzz and 1-100
- *                                                                                               
+ *
  * Return:returns 0 on success
  */
 int main(void)
