@@ -23,7 +23,7 @@ int main()
 			n = n / div;
 			if(n == 1)
 			{
-				printf("%d is the largest prime factor !",maxFact);
+				printf("%d\n", maxFact);
 				break;
 			}
 		}
