@@ -19,7 +19,7 @@ void print_diagonal(int n)
 	}
 	else
 	{
-	for (n1 = 2; n1 <= n; n1++)
+	for (n1 = 1; n1 <= n; n1++)
 	{
 		n2 = 1;
 		while (n2 < n1)
