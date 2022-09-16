@@ -18,7 +18,7 @@ void print_square(int size)
 	{
 		for (count2 = 1; count2 <= size; count++)
 			putchar(35);
-	putchar('\n')
+	putchar('\n');
 	}
 	}
 }
