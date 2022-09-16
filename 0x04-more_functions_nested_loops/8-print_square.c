@@ -16,7 +16,7 @@ void print_square(int size)
 	{
 	for (count1 = 1; count1 <= size; count1++)
 	{
-		for (count2 = 1; count2 <= size; count++)
+		for (count2 = 1; count2 <= size; count2++)
 			putchar(35);
 	putchar('\n');
 	}
