@@ -10,17 +10,24 @@ void print_triangle(int size)
 {
 	int n, n2;
 
-	if (n <= 0)
+	if (size <= 0)
 		putchar('\n');
 	else
 	{
-		n2 = size;
 	for (n = 1; n <= size; n++)
 	{
-		while (n < n2)
+		n2 = 1;
+		while (n2 < size)
 		{
-			putchar(' ');
-			n++;
+			if (n2 <= (size - n))
+			{
+				putchar(' ');
+			}
+			else
+			{
+				putchar(35);
+			}
+		n2++;
 		}
 	putchar(35);
 	putchar('\n');
