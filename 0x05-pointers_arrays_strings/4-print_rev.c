@@ -8,14 +8,14 @@
 void print_rev(char *s)
 {
 	int index;
-	int rev[index];
+	char rev[index];
 
 	index = 0;
 	while (*s != '\0')
 	{
 		rev[index] = *s;
 		index++;
-		s = s + 1
+		s = s + 1;
 	}
 		while (index >= 0)
 		{
