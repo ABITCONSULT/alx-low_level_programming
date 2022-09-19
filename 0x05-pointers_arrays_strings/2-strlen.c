@@ -2,13 +2,13 @@
 
 /**
  * _strlen - prints the lenght of a string
- * @s the pointer to the string to print
+ * @s:the pointer to the string to print
  * Return:returns int count
  */
 int _strlen(char *s)
 {
 	int count;
-	
+
 	count = 0;
 	while (*s != '\0')
 	{
