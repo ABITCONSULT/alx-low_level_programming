@@ -7,13 +7,13 @@
  */
 int _strlen(char *s)
 {
-	int count1;
-	char str1;
+	int count;
 	
-	str1[] = *s;
-	for (count1 = 0; count1 < 200; count1++)
+	count = 0;
+	while (*s != '\0')
 	{
+		count = count + 1;
+		*s = *(*s + 1);
 	}
-	_putchar(count1 + 48);
-	return (count1);
+	return (count);
 }
