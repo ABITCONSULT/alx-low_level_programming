@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- *  * rev_string - reverses a string
- *   *
- *    * @s: string parameter input
- *     *
- *      * Return: Nothing
- *      */
+ * rev_string - reverses a string
+ *
+ * @s: string parameter input
+ *
+ * Return: Nothing
+ */
 
 void rev_string(char *s)
 {
@@ -15,11 +15,10 @@ void rev_string(char *s)
 	for (l = 0; s[l] != '\0'; ++l)
 	{
 	}
-	for (i = 0; i < l / 2; ++i)
+	for (i = 0; i < l; ++i)
 	{
 		ch = s[i];
 		s[i] = s[l - 1 - i];
-
-		s[l - 1 - i] = ch; 
+		s[l - 1 - i] = ch;
 	}
 }
