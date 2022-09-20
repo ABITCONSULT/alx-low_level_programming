@@ -7,14 +7,12 @@
  */
 void puts2(char *str)
 {
-	while (*str != '0')
+	while (*str != '\0')
 	{
-		if (*str != '\\')
-		{
-		_putchar(*str);
-		str = str + 2;
-		}
-		else
+
+		_putchar(*str);                                                                                                                          
+                str = str + 2;
+		if ((((str - 6) == 'a') && ((str - 4) == 'o')) && ((str - 2) == 'u'))
 		{
 		break;
 		}
