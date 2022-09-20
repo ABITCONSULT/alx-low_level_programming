@@ -12,7 +12,7 @@ void puts2(char *str)
 
 		_putchar(*str);                                                                                                                          
                 str = str + 2;
-		if ((((str - 6) == 'a') && ((str - 4) == 'o')) && ((str - 2) == 'u'))
+		if (((*(str - 6) == 'a') && (*(str - 4) == 'o')) && (*(str - 2) == 'u'))
 		{
 		break;
 		}
