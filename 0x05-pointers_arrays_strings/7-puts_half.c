@@ -12,7 +12,14 @@ void puts_half(char *str)
 	for (c1 = 0; str[c1] != 0; c1++)
 	{
 	}
+	if (c2 % 2 == 0)
+	{
 	c2 = c1 / 2;
+	}
+	else
+	{
+		c2 = (c1 - 1) / 2;
+	}
 	str = str + c2;
 
 	while (c2 < c1)
