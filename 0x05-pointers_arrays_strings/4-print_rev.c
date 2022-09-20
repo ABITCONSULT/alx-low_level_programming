@@ -12,10 +12,9 @@ void print_rev(char *s)
 	while (*s != '\0')
 	{
 		index = index + 1;
-		_putchar(index + 48);
 		s = s + 1;
 	}
-	_putchar(index + 48);
+	_putchar(s[index]);
 		while (index >= 0)
 		{
 			index--;
