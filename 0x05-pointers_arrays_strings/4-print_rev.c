@@ -18,5 +18,5 @@ void print_rev(char *s)
 		s++;
 		i++;
 	}
-	_putchar(i);
+	_putchar(i + 48);
 }
