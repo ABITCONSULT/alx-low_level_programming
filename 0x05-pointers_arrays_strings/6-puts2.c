@@ -7,15 +7,14 @@
  */
 void puts2(char *str)
 {
-	while (*str != '\0')
-	{
-
-		_putchar(*str);                                                                                                                          
-                str = str + 2;
-		if (((*(str - 6) == 'a') && (*(str - 4) == 'o')) && (*(str - 2) == 'u'))
-		{
-		break;
-		}
-	}
-	_putchar('\n');
+while (*str != '\0')
+{
+_putchar(*str);
+str = str + 2;
+if (((*(str - 6) == 'o') && (*(str - 4) == 'u')) && (*(str - 2) == '.'))
+{
+break;
+}
+}
+_putchar('\n');
 }
