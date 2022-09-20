@@ -10,14 +10,14 @@
 void print_rev(char *s)
 {
 	int i;
-	char ch;
 
 	i = 0;
 	while (*s != '\0')
 	{
-		ch = *s;
-		s[i] = ch;
-		i++;
+		s[i] = *s;
+		_putchar(*s);
+		_putchar(s[i]);
+		i += 1; 
 	}
 	_putchar(i);
 	while (i >= 0)
