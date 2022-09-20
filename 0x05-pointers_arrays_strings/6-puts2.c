@@ -9,7 +9,7 @@ void puts2(char *str)
 {
 	while (*str != '\0')
 	{
-		if (*str != 'T')
+		if (*str != 'H')
 		{
 		_putchar(*str);
 		str = str + 2;
