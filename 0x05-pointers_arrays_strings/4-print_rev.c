@@ -13,13 +13,12 @@ void print_rev(char *s)
 	index = 0;
 	while (*s != '\0')
 	{
-		rev[index] = *s;
 		index++;
 		s = s + 1;
 	}
 		while (index >= 0)
 		{
-			_putchar(rev[index]);
+			_putchar(s[index]);
 			index--;
 		}
 	_putchar('\n');
