@@ -5,6 +5,7 @@
  * @dest: the final concat string
  * @src: the string to concat
  * @n: where array src concat
+ * Return: returns dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
