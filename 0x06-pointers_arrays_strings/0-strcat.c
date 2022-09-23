@@ -14,12 +14,13 @@ char *_strcat(char *dest, char *src)
 	{
 		c1++;
 	}
-	while (*(src + c2) != 0)
+	while (c2 >= 0)
 	{
 		*(dest + c1) = *(src + c2);
 		c1++;
 		c2++;
+		if (*(src + c2) == '\0')
+			break;
 	}
-	*dest = *src;
 	return (dest);
 }
