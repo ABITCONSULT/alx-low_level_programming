@@ -7,15 +7,20 @@
  */
 char *rot13(char *p)
 {
-	while (*p != '\0')
+char *x = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char *y = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+
+for (i = 0; s[i] != '\0'; i++)
+{
+	for (j = 0; x[j] != '\0'; j++)
 	{
-		if ((*p <= 77 && *p >= 65) || (*p <= 109 && *p >= 97))
-			*p = *p + 13;
-		while ((*p <= 90 && *p >= 78) || (*p <= 122 && *p >= 110))
+		if (s[i] == x[j])
 		{
-			*p = *p - 13;
-			continue;
+			s[i] = y[j];
+			break;
 		}
 	}
-	return (p);
+}
+
+return (s);
 }
