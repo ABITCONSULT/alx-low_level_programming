@@ -7,16 +7,17 @@
  */
 char *rot13(char *p)
 {
+	int i,j;
 char *x = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 char *y = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-for (i = 0; s[i] != '\0'; i++)
+for (i = 0; p[i] != '\0'; i++)
 {
 	for (j = 0; x[j] != '\0'; j++)
 	{
-		if (s[i] == x[j])
+		if (p[i] == x[j])
 		{
-			s[i] = y[j];
+			p[i] = y[j];
 			break;
 		}
 	}
