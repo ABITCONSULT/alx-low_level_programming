@@ -11,8 +11,6 @@ char *rot13(char *p)
 	{
 		if ((*p <= 77 && *p >= 65) || (*p <= 109 && *p >= 97))
 			*p = *p + 13;
-		else  
-			*p = *p - 13;
 	}
 	return (p);
 }
