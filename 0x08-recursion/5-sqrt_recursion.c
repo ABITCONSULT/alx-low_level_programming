@@ -8,14 +8,14 @@
  */
 int sqrtcheck(int n, int digit)
 {
-	if (n % (n/c) == 0)
+	if (n % (n/digit) == 0)
 	{
-		if (n * (n/c) == n)
-			return (c);
+		if (n * (n/digit) == n)
+			return (digit);
 		else
 			return (-1);
 	}
-	return (0 + sqrtcheck(n, c + 1));
+	return (0 + sqrtcheck(n, digit + 1));
 }
 
 /**
@@ -25,7 +25,6 @@ int sqrtcheck(int n, int digit)
  */
 int _sqrt_recursion(int n)
 {
-	unsigned int num;
 
 	if (n < 0)
 		return (-1);
@@ -33,6 +32,6 @@ int _sqrt_recursion(int n)
 		return (0);
 	else
 	{
-		return (sqrtchecker(n, 2));
+		return (sqrtcheck(n, 2));
 	}
 }
