@@ -34,6 +34,8 @@ int rev(char *s, int n1, int n2)
 			rev(s, n1, n2);
 			return (1);
 		}
+		else
+			return (0);
 	}
 	else
 		return (0);
