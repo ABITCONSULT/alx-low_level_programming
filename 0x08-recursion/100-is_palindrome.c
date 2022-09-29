@@ -7,13 +7,13 @@
  */
 int len(char *s)
 {
-	if (*s == 0)
-		return (0);
-	if (*s != 0)
+	if (*s != '\0')
 	{
 		s++;
 		return (1 + len(s));
 	}
+	else
+		return(0);
 }
 
 /**
@@ -34,9 +34,9 @@ int rev(char *s, int n1, int n2)
 			rev(s, n1, n2);
 			return (1);
 		}
-		else
-			return (0);
 	}
+	else
+		return (0);
 }
 
 /**
