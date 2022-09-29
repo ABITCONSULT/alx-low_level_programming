@@ -8,10 +8,12 @@
  */
 int sqrtcheck(int n, int digit)
 {
-	if (n % (n/digit) == 0)
+	if (digit % (n/digit) == 0)
 	{
-		if (n * (n/digit) == n)
+		if (digit * (n/digit) == n)
+		{
 			return (digit);
+		}
 		else
 			return (-1);
 	}
@@ -30,7 +32,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	else if (n == 0)
 		return (0);
-	if (n = 1)
+	if (n == 1)
 		return (1);
 	else
 	{
