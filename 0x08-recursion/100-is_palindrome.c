@@ -8,10 +8,10 @@
  */
 char* rev(char *s, char *m)
 {
-	if (s != '\0')
+	if (*s != '\0')
 	{
 		rev(s + 1, m + 1);
-		m = s;
+		*m = *s;
 	}
 	return (m);
 }
