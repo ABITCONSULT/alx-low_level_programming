@@ -26,15 +26,15 @@ int rev(char *s, int n1, int n2)
 {
 
 
-	if (s[n1] == s[n2 - 1])
+	if (s[n1] == s[n2])
 	{
 		if (n2 > n1)
 		{
 		n1++;
 		n2--;
-		rev(s, n1, n2);
-		}
 		return (1);
+		}
+		return (0 + rev(s, n1, n2));
 	}
 	else
 		return (0);
