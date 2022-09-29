@@ -3,14 +3,14 @@
 /**
  * sqrtcheck - check for square root
  * @n: number to get its square root
- * @c: increment number to run
+ * @digit: increment number to run
  * Return: returns the sqrt of n
  */
 int sqrtcheck(int n, int digit)
 {
-	if (digit % (n/digit) == 0)
+	if (digit % (n / digit) == 0)
 	{
-		if (digit * (n/digit) == n)
+		if (digit * (n / digit) == n)
 		{
 			return (digit);
 		}
@@ -30,12 +30,9 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	else if (n == 0)
+	if (n == 0)
 		return (0);
 	if (n == 1)
 		return (1);
-	else
-	{
-		return (sqrtcheck(n, 2));
-	}
+	return (sqrtcheck(n, 2));
 }
