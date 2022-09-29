@@ -33,9 +33,10 @@ int rev(char *s, int n1, int n2)
 		{
 		n1++;
 		n2--;
-		return (1);
-		}
 		return (0 + rev(s, n1, n2));
+		}
+		return (1);
+	}
 	}
 	else
 		return (0);
