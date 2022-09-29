@@ -25,6 +25,7 @@ int is_palindrome(char *s)
 {
 	char *m;
 
+	m = s;
 	rev(s, m);
 	if (s == m)
 		return (1);
