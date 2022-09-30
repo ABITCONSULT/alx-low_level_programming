@@ -18,8 +18,6 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	if (isdigit(argv[1]))
-	{
 		if (value <= 0)
 		{
 			printf("%d\n", change);
@@ -48,9 +46,5 @@ int main(int argc, char *argv[])
 		}
 	printf("%d\n", change);
 	return (0);
-	}
-	else
-	{	printf("Error\n");
-		return (0); }
 	}
 }
