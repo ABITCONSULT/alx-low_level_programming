@@ -13,12 +13,16 @@ int main(int argc, char *argv[])
 
 	for (; i < argc; i++)
 	{
+		while (*(argv[i]) != '\0')
+		{
 		if (*(argv[i]) <= 57 && *(argv[i]) >= 48)
 			sum += atoi(argv[i]);
 		else
 		{
 			printf("Error\n");
 			return (1);
+		}
+		argv[i]++;
 		}
 	}
 	printf("%d\n", sum);
