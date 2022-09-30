@@ -18,14 +18,14 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-		while (value != 0)
-		{
 		if (value <= 0)
 		{
 			printf("%d\n", change);
 			return (0);
 		}
-		else if (value >= 25)
+		while (value != 0)
+		{
+		if (value >= 25)
 		{	change += value / 25;
 			value = value % 25; }
 		else if (value >= 10)
