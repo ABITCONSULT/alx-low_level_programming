@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
 			printf("%d\n", change);
 			return (0);
 		}
+		else
+		{
 		while (value != 0)
 		{
 		if (value >= 25)
@@ -40,6 +42,7 @@ int main(int argc, char *argv[])
 		else
 		{	change += value / 1;
 			value = value % 1; }
+		}
 		}
 	printf("%d\n", change);
 	return (0);
