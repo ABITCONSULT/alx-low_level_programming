@@ -20,31 +20,26 @@ int main(int argc, char *argv[])
 	{
 		while (value != 0)
 		{
-		if (value < 0)
-			change = 0;
+		if (value <= 0)
+		{
+			printf("%d\n", change);
+			return (0);
+		}
 		else if (value >= 25)
 		{	change += value / 25;
 			value = value % 25; }
 		else if (value >= 10)
-		{
-			change += value / 10;
-			value = value % 10;
-		}
+		{	change += value / 10;
+			value = value % 10; }
 		else if (value >= 5)
-		{
-			change += value / 5;
-			value = value % 5;
-		}
+		{	change += value / 5;
+			value = value % 5; }
 		else if (value >= 2)
-		{
-			change += value / 2;
-			value = value % 2;
-		}
+		{	change += value / 2;
+			value = value % 2; }
 		else
-		{
-			change += value / 1;
-			value = value % 1;
-		}
+		{	change += value / 1;
+			value = value % 1; }
 		}
 	printf("%d\n", change);
 	return (0);
