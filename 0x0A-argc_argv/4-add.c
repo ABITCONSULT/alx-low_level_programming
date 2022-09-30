@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - programms that adds all integer arguments
@@ -15,15 +16,14 @@ int main(int argc, char *argv[])
 	{
 		while (*(argv[i]) != '\0')
 		{
-		if (*(argv[i]) <= 57 && *(argv[i]) >= 48)
-			sum += atoi(argv[i]);
-		else
+		if (!isdigit(*(argv[i])))
 		{
 			printf("Error\n");
 			return (1);
 		}
 		argv[i]++;
 		}
+	sum += atoi(argv[i]);
 	}
 	printf("%d\n", sum);
 	return (0);
