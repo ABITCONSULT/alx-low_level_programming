@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 			printf("%d\n", change);
 			return (0);
 		}
-		if (value > 0)
+		else
 		{
 		while (value != 0)
 		{
