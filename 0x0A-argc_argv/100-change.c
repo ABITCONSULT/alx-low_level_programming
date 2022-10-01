@@ -39,9 +39,12 @@ int main(int argc, char *argv[])
 		else if (value >= 2)
 		{	change += value / 2;
 			value = value % 2; }
-		else
+		else if (value >= 1)
 		{	change += value / 1;
 			value = value % 1; }
+		else
+		{
+		}
 		}
 		}
 	printf("%d\n", change);
