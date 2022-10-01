@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 	int change = 0, value;
 
-	if (argc != 2 || argv[1] = '\0')
+	if (argc != 2 || *(argv[1]) = '\0')
 	{	printf("Error\n");
 		return (1);
 	}
