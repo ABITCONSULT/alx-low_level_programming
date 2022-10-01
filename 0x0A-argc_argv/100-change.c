@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - gives cent change
  * @argc: to check number of arguments
@@ -12,7 +11,7 @@ int main(int argc, char *argv[])
 	int change = 0, value;
 
 	value = atoi(argv[1]);
-	if (argc == 2)
+	if (argc != 2)
 	{	printf("Error\n");
 		return (1);
 	}
