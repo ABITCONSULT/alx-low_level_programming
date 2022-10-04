@@ -61,7 +61,7 @@ char *_strdup(char *str)
 	if (copy == NULL)
 		return (NULL);
 
-	_strcpy(copy str);
+	_strcpy(copy, str);
 	
 	return (copy);
 }
