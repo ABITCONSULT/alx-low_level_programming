@@ -22,51 +22,6 @@ int _strlen(char *s)
 
 
 /**
- * _strncat - concatenates string
- * @dest: the final concat string
- * @src: the string to concat
- * @n: where array src concat
- * Return: returns dest
- */
-char *_strncat(char *dest, char *src)
-{
-	int j = 0, i = 0;
-
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-	while (src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
-
-/**
- * _strcpy - copies astring from one str to naother dest
- * @src: the original string to copy
- * @dest: the holder to copy to
- * Return:returns dest
- */
-char *_strcpy(char *dest, char *src)
-{
-	int c1, c2 = 0;
-
-	for (c1 = 0; src[c1] != '\0'; c1++)
-	{
-		dest[c2] = src[c1];
-		c2++;
-	}
-	dest[c2] = '\0';
-	return (dest);
-}
-
-
-/**
  * str_concat - concatenates two strings with malloc
  * @s1: string 1
  * @s2 string 2
@@ -75,7 +30,7 @@ char *_strcpy(char *dest, char *src)
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int i, j;
+	int i, j, k;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -93,9 +48,14 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	_strncat(s1, s2);
+	for (k = 0; k <= i; k++)
+		p[k] = s1[k];
 
-	_strcpy(p, s1);
+	for (i = 0; i <= j; i++)
+	{
+		p[k] = s2[i];
+		k++;
+	}
 
 	return (p);
 }
