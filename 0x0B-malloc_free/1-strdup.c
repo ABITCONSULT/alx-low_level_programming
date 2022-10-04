@@ -18,7 +18,8 @@ char *_strdup(char *str)
 		i++;
 		str++;
 	}
-
+	return (i);
+	/**
 	copy = malloc((i + 1) * sizeof(str));
 	while (j <= i)
 	{
@@ -27,4 +28,5 @@ char *_strdup(char *str)
 	}
 
 	return (copy);
+	*/
 }
