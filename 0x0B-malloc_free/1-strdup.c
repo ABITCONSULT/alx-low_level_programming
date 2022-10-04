@@ -19,11 +19,11 @@ char *_strdup(char *str)
 		str++;
 	}
 
-	copy = malloc(typeof(str) * (i + 1));
+	copy = malloc((i + 1) * typeof(str));
 	while (j <= i)
 	{
 		str[i] = copy[j];
-		j++
+		j++;
 	}
 
 	return (copy);
