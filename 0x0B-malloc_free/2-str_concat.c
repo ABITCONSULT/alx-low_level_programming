@@ -46,6 +46,25 @@ char *_strncat(char *dest, char *src)
 	return (dest);
 }
 
+/**
+ * _strcpy - copies astring from one str to naother dest
+ * @src: the original string to copy
+ * @dest: the holder to copy to
+ * Return:returns dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int c1, c2 = 0;
+
+	for (c1 = 0; src[c1] != '\0'; c1++)
+	{
+		dest[c2] = src[c1];
+		c2++;
+	}
+	dest[c2] = '\0';
+	return (dest);
+}
+
 
 /**
  * str_concat - concatenates two strings with malloc
@@ -70,12 +89,7 @@ char *str_concat(char *s1, char *s2)
 
 	_strncat(s1, s2);
 
-	while (*s1 != '\0')
-	{
-		*p = *s1;
-		p++;
-		s1++;
-	}
-	*p = '\0';
+	_strcpy(p, s1);
+
 	return (p);
 }
