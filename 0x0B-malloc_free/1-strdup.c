@@ -52,7 +52,6 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	
 
 	i = _strlen(str);
 
@@ -62,6 +61,5 @@ char *_strdup(char *str)
 		return (NULL);
 
 	_strcpy(copy, str);
-	
 	return (copy);
 }
