@@ -10,7 +10,7 @@
 char *_strdup(char *str)
 {
 	char *copy;
-	unsigned int j = 0;
+	unsigned int j;
 	unsigned int i = 0;
 
 	if (str == NULL)
@@ -22,15 +22,17 @@ char *_strdup(char *str)
 		str++;
 	}
 
+	for (j = 0; j <= i; j++)
+		str--;
+
 	copy = (char *)malloc((i + 1) * sizeof(char));
 
 	if (copy == NULL)
 		return (NULL);
 
-	while (j <= i)
+	for (j = 0; j <= i; j++)
 	{
-		*(str + j) = *(copy + j);
-		j++;
+		*(copy + j) = *(str + j);
 	}
 
 	return (copy);
