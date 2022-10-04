@@ -28,7 +28,7 @@ int _strlen(char *s)
  * @n: where array src concat
  * Return: returns dest
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src)
 {
 	int j = 0, i = 0;
 
@@ -36,7 +36,7 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		i++;
 	}
-	while (j < n && src[j] != '\0')
+	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
@@ -70,7 +70,7 @@ char *str_concat(char *s1, char *s2)
 
 	_strncat(s1, s2);
 
-	while (s1 != '\0')
+	while (*s1 != '\0')
 	{
 		*p = *s1;
 		p++;
