@@ -24,13 +24,13 @@ int _strlen(char *s)
 /**
  * str_concat - concatenates two strings with malloc
  * @s1: string 1
- * @s2 string 2
- * RETURN: returns the concatenated string
+ * @s2: string 2
+ * Return: returns the concatenated string
  */
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int i, j, k;
+	int i, j, k, l;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -51,9 +51,9 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k <= i; k++)
 		p[k] = s1[k];
 
-	for (i = 0; s2[i] != '\0'; i++, k++)
+	for (l = 0; l <= j; l++, k++)
 	{
-		p[k] = s2[i];
+		p[k] = s2[l];
 	}
 	p[k] = '\0';
 
