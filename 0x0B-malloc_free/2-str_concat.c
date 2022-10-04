@@ -51,11 +51,12 @@ char *str_concat(char *s1, char *s2)
 	for (k = 0; k <= i; k++)
 		p[k] = s1[k];
 
-	for (i = 0; i <= j; i++)
+	for (i = 0; s2[i] != '\0'; i++)
 	{
 		p[k] = s2[i];
 		k++;
 	}
+	p[k] = '\0';
 
 	return (p);
 }
