@@ -15,6 +15,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
+	
 	while (*str != '\0')
 	{
 		i++;
@@ -28,7 +29,7 @@ char *_strdup(char *str)
 
 	while (j <= i)
 	{
-		*(copy + j) = *(str + j);
+		*(str + j) = *(copy + j);
 		j++;
 	}
 
