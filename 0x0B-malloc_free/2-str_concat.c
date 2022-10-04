@@ -78,14 +78,20 @@ char *str_concat(char *s1, char *s2)
 	int i, j;
 
 	if (s1 == NULL)
-		*s1 = '\0';
+		*s1 = "";
 	if (s2 == NULL)
-		*s2 = '\0';
+		*s2 = "";
 
 	i = _strlen(s1);
 	j = _strlen(s2);
 
-	p = (char *)malloc((i + j) * sizeof(char));
+	p = (char *)malloc((i + j + 1) * sizeof(char));
+
+	if (p == NULL)
+	{
+		free(p);
+		return (NULL);
+	}
 
 	_strncat(s1, s2);
 
