@@ -14,11 +14,17 @@ char *_strdup(char *str)
 	int i = 0;
 
 	while (*str != '\0')
+	{
 		i++;
+		str++;
+	}
 
 	copy = malloc(typeof(str) * (i + 1));
-	while (i <= j)
+	while (j <= i)
+	{
 		str[i] = copy[j];
+		j++
+	}
 
 	return (copy);
 }
