@@ -10,8 +10,8 @@
 char *_strdup(char *str)
 {
 	char *copy;
-	int j = 0;
-	int i = 0;
+	unsigned int j = 0;
+	unsigned int i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -21,13 +21,13 @@ char *_strdup(char *str)
 		str++;
 	}
 
-	copy = (char *)malloc((i + 1) * sizeof(str));
+	copy = (char *)malloc((i + 1) * sizeof(char));
 	if (copy == NULL)
 		return (NULL);
 
 	while (j <= i)
 	{
-		str[j] = copy[j];
+		copy[j] = str[j];
 		j++;
 	}
 
