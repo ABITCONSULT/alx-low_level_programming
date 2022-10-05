@@ -5,6 +5,7 @@
 /**
  * free_grid - frees the grid memory space created above.
  * @height: the height of the grid
+ * @grid: the gree to free of malloc
  * Return: returns nothing
  */
 void free_grid(int **grid, int height)
