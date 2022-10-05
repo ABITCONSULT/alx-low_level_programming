@@ -28,12 +28,12 @@ char *argstostr(int ac, char **av)
 
 	p = malloc((k + 1) * sizeof(char));
 
-	if (p = NULL)
+	if (p == NULL)
 	{
 		free(p);
 		return (NULL);
 	}
-	for (i = j = l = 0; l < c; j++, l++)
+	for (i = j = l = 0; l < k; j++, l++)
 	{
 		if (av[i][j] == '\0')
 		{
