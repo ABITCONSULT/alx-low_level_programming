@@ -12,7 +12,7 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i, j, k;
+	int i, j, k, l;
 	char *p;
 
 	i = strlen(s1);
