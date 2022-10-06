@@ -23,10 +23,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = strlen(s1);
 	j = strlen(s2);
 
-	if (j < n)
-		n = j;
-
-	p = (char *)malloc(sizeof(char) * (i + n + 1));
+	if (j <= n)
+		p = (char *)malloc(sizeof(char) * (i + j + 1));
+	else
+		p = (char *)malloc(sizeof(char) * (i + n + 1));
 	
 	if (p == NULL)
 		return (NULL);
