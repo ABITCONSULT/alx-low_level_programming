@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * first - function executed before main
  * Return: no return.
